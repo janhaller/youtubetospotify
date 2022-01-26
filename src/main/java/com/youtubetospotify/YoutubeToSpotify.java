@@ -111,7 +111,7 @@ public class YoutubeToSpotify {
          String song_id = items.getJSONObject(i).getString("id");
          //create process to use yt-dlb  
          Process yt_dl = new ProcessBuilder(
-            "\"C:/Program Files/YouTube-DL/yt-dlp.exe\"",
+            "", //path to yt-dlp
             "--skip-download",
             "-O%(track)s %(artist)s",
             song_id
